@@ -19,8 +19,12 @@
 			<artifactId>android</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.openscada.opc</groupId>
+			<artifactId>lib</artifactId>
+			<version>1.0.0.201303051455</version>
+		</dependency>
 	</dependencies>
-
 	<build>
 		<finalName>${project.artifactId}</finalName>
 
@@ -78,7 +82,8 @@
 		</plugins>
 		<pluginManagement>
 			<plugins>
-				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
@@ -150,8 +155,10 @@
 									<keypass>${sign.keypass}</keypass>
 									<verbose>false</verbose>
 									<arguments>
-										<argument>-sigalg</argument><argument>MD5withRSA</argument>
-										<argument>-digestalg</argument><argument>SHA1</argument>
+										<argument>-sigalg</argument>
+										<argument>MD5withRSA</argument>
+										<argument>-digestalg</argument>
+										<argument>SHA1</argument>
 									</arguments>
 								</configuration>
 							</execution>

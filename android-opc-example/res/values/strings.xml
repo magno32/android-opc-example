@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Hello Maven</string>
+    <string name="app_name">Android OPC Example</string>
     <string name="hello">Hello android-opc-example!</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+    <string name="serverLabel">Server</string>
+    <string name="userLabel">Username</string>
+    <string name="passwordLabel">Password</string>
+    <string name="connectLabel">Connect</string>
+    <string name="clsidLabel">CLSID</string>
+    <string name="browseLabel">Browse</string>
+    <string name="selectServerLabel">Select OPC Server</string>
+	<string name="connectionInfoMissing">Hostname, Username, Password, and CLSID required.</string>
+	<string name="browseInfoMissing">Hostname, Username, Password, and CLSID required.</string>
 </resources>
