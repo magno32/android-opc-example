@@ -11,7 +11,9 @@
     <string name="connectLabel">Connect</string>
     <string name="clsidLabel">CLSID</string>
     <string name="browseLabel">Browse</string>
+    <string name="nodeDescription">Node Description</string>
     <string name="selectServerLabel">Select OPC Server</string>
 	<string name="connectionInfoMissing">Hostname, Username, Password, and CLSID required.</string>
 	<string name="browseInfoMissing">Hostname, Username, Password, and CLSID required.</string>
+	<string name="errorBrowsingMsg">Error browsing the OPC Server</string>
 </resources>
