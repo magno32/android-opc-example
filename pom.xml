@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.summit</groupId>
@@ -11,10 +12,16 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<platform.version> 4.1.1.4
-					</platform.version>
+		</platform.version>
 		<android.plugin.version>3.6.0</android.plugin.version>
 	</properties>
-
+	<repositories>
+		<repository>
+			<id>summitRepo</id>
+			<name>summitRepo-public</name>
+			<url>http://devel.summitsystemsinc.net/artifactory/public-ext-releases-local</url>
+		</repository>
+	</repositories>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -61,7 +68,7 @@
 						<sdk>
 							<platform>16</platform>
 						</sdk>
-												<zipalign>
+						<zipalign>
 							<verbose>true</verbose>
 						</zipalign>
 						<undeployBeforeDeploy>true</undeployBeforeDeploy>
@@ -106,8 +113,8 @@
 		</profile>
 	</profiles>
 
-  <modules>
-    <module>android-opc-example</module>
-    <module>android-opc-example-it</module>
-  </modules>
+	<modules>
+		<module>android-opc-example</module>
+		<module>android-opc-example-it</module>
+	</modules>
 </project>
