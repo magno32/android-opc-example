@@ -20,5 +20,7 @@
 	<string name="currentValueLabel">Current Value</string>
 	<string name="refreshLabel">Refresh</string>
 	<string name="subscribeLabel">Subscribe</string>
+	<string name="unSubscribeLabel">Unsubscribe</string>
 	<string name="deviceReadLabel">Device Read</string>
+	<string name="pollIntervalLabel">Poll Interval</string>
 </resources>
