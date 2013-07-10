@@ -103,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:max="9950"
-            android:progress="2000"
+            android:progress="1950"
             android:progressDrawable="@drawable/progressbar"
             android:secondaryProgress="0" />
 
