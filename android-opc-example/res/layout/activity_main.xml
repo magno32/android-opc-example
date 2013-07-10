@@ -63,7 +63,7 @@
         android:inputType="textPassword" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/currentValueVield"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/serverField"
@@ -77,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/currentValueVield"
         android:ems="10"
         android:inputType="text" />
 

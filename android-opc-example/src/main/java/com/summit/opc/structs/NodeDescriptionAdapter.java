@@ -3,6 +3,7 @@ package com.summit.opc.structs;
 import com.summit.opc.BrowserListActivity;
 import com.summit.opc.HelloAndroidActivity;
 import com.summit.opc.R;
+import com.summit.opc.ValueMonitorActivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -30,7 +31,7 @@ public class NodeDescriptionAdapter extends ArrayAdapter<NodeDescription> {
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		NodeDescription item = super.getItem(position);
+		final NodeDescription item = super.getItem(position);
 		LayoutInflater inflater = (LayoutInflater) super.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View rowView = inflater.inflate(R.layout.branch_description, parent, false);
 		TextView tv = (TextView) rowView.findViewById(R.id.branchName);
@@ -53,6 +54,17 @@ public class NodeDescriptionAdapter extends ArrayAdapter<NodeDescription> {
 			});
 		}else if(item instanceof LeafDescription){
 			iv.setImageResource(R.drawable.tag);
+			rowView.setOnClickListener(new View.OnClickListener() {
+				
+				public void onClick(View v) {
+					Bundle b = new Bundle();
+					
+					b.putParcelable(HelloAndroidActivity.LEAF_INTENT_EXTRA, (LeafDescription)item);
+					Intent intent = new Intent(getContext(),ValueMonitorActivity.class);
+					intent.putExtras(b);
+					getContext().startActivity(intent);
+				}
+			});
 		}
 
 		return rowView;

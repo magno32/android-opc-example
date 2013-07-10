@@ -40,6 +40,7 @@ public class HelloAndroidActivity extends Activity {
 	public static final String PASSWORD_PREF = "password";
 	public static final String CLSID_PREF = "clsid";
 	public static final String BRANCH_INTENT_EXTRA = "branch";
+	public static final String LEAF_INTENT_EXTRA = "leaf";
 
 	public static final String EMPTY_STRING = "";
 

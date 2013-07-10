@@ -16,4 +16,9 @@
 	<string name="connectionInfoMissing">Hostname, Username, Password, and CLSID required.</string>
 	<string name="browseInfoMissing">Hostname, Username, Password, and CLSID required.</string>
 	<string name="errorBrowsingMsg">Error browsing the OPC Server</string>
+	<string name="tempString">TempString</string>
+	<string name="currentValueLabel">Current Value</string>
+	<string name="refreshLabel">Refresh</string>
+	<string name="subscribeLabel">Subscribe</string>
+	<string name="deviceReadLabel">Device Read</string>
 </resources>

@@ -13,6 +13,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".BrowserListActivity" />
+        <activity android:name=".ValueMonitorActivity" />
     </application>
 
 </manifest>
