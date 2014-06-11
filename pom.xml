@@ -13,13 +13,13 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<platform.version> 4.1.1.4
 		</platform.version>
-		<android.plugin.version>3.6.0</android.plugin.version>
+		<android.plugin.version>3.9.0-rc.2</android.plugin.version>
 	</properties>
 	<repositories>
 		<repository>
-			<id>summitRepo</id>
-			<name>summitRepo-public</name>
-			<url>http://devel.summitsystemsinc.net/artifactory/public-ext-releases-local</url>
+			<id>utgard</id>
+			<name>utgard releases</name>
+			<url>http://repo.openscada.org/maven/releases/</url>
 		</repository>
 	</repositories>
 	<dependencyManagement>
