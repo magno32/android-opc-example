@@ -1,3 +1,6 @@
 ## Travis Build file
 ---
-language: java
+language: android
+android:
+  components:
+    - build-tools-19.0.2
